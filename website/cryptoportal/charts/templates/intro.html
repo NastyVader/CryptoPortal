@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="jumbotron pr-0 pl-0"  style = "background-color:#41b3a3;border-radius:0px;">
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist" style="background-color:#f5f5f5";>
+        <li class="nav-item">
+          <a class="nav-link active text-dark" id="chart1-tab" data-toggle="tab" href="#chart1" role="tab" aria-controls="chart1" aria-selected="false">Chart Type-1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" id="chart2-tab" data-toggle="tab" href="#chart2" role="tab" aria-controls="chart2" aria-selected="false">Chart Type-2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" id="chart3-tab" data-toggle="tab" href="#chart3" role="tab" aria-controls="chart3" aria-selected="false">Chart Type-3</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade  show active" id="chart1" role="tabpanel" aria-labelledby="chart1-tab">{{ candle|safe }}</div>
+        <div class="tab-pane fade" id="chart2" role="tabpanel" aria-labelledby="chart2-tab">{{ scatter|safe }}</div>
+        <div class="tab-pane fade" id="chart3" role="tabpanel" aria-labelledby="chart3-tab">{{ candle_range|safe }}</div>
+      </div>
+
+      <div class="container-fluid bg-3 text-center">
+        </br></br></br>    
+        <h3 style="color:#0A7B79;">Checkout more</h3><br>
+        <div class="row">
+          <div class="col-sm-3">
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          </div>
+          <div class="col-sm-3"> 
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          </div>
+          <div class="col-sm-3"> 
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          </div>
+          <div class="col-sm-3">
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          </div>
+        </div>
+      </div><br>
+      
+      <div class="container-fluid bg-3 text-center">    
+        <div class="row">
+          <div class="col-sm-3">
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          </div>
+          <div class="col-sm-3"> 
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          </div>
+          <div class="col-sm-3"> 
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          </div>
+          <div class="col-sm-3">
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          </div>
+        </div>
+    </div><br><br>
+{% endblock content %}
