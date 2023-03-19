@@ -19,6 +19,17 @@
           background-color: #f2f2f2;
           padding: 25px;
         }
+        .btn-outline-warning, .btn-outline-warning:active, .btn-outline-warning:visited {
+            color: #F68A1E;
+            border-color: #F68A1E;
+        }
+        .btn-outline-warning:hover {
+            color: #FFF;
+            background-color: #F68A1E;
+            border-color: #FFF
+        }
+        
+        
     </style>
 
 </head>
@@ -45,8 +56,8 @@
     </div>
     {% block content %}{% endblock content %}
 
-    <footer class="container-fluid text-center fixed-bottom pt-2 pb-1">
-        <p><a href="#"><button class="btn btn-outline-warning ml-2" type="submit">Login</button></a> This is still under development</p>
+    <footer class="text-center fixed-bottom pt-2 pb-0 mb-0">
+        <p class="mb-2"><a href="#"><button class="btn btn-outline-warning ml-2" type="submit">Login</button></a> "This is still under development"</p>
     </footer>
 </body>
 </html>

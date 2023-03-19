@@ -26,46 +26,31 @@
         <h3 style="color:#FFF;">Checkout more</h3>
       </div>
      </div>
-    <div class="jumbotron pr-0 pl-0 pt-0"  style = "background-color:#f5f5f5;border-radius:0px;">
-      <div class="container-fluid bg-3 text-center text-white">
-        <div class="row" style="background-color:#f5f5f5";>
-          <div class="col-sm-3">
-            <p>Some text..</p>
-            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    <form method='POST' >
+      {% csrf_token %}
+      <div class="jumbotron pr-0 pl-0 pt-4"  style = "background-color:#f5f5f5;border-radius:0px;">
+        <div class="container-fluid bg-3 text-center text-white">
+          <div class="row">
+            {% for i in coins %}
+            <div class="col-sm-3">
+              <button class="btn btn-outline-warning pr-5 pl-5 p-3" name= "coin" value={{ i }}>
+              {{ i }}
+              </button> 
+            </div>
+            {% endfor %}
           </div>
-          <div class="col-sm-3"> 
-            <p>Some text..</p>
-            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div><br>
+        
+        <div class="container-fluid bg-3 text-center text-white" style="background-color:#f5f5f5";>    
+          <div class="row">
+            {% for i in coins2 %}
+            <div class="col-sm-3">
+              <button class="btn btn-outline-warning pr-5 pl-5 p-3" name= "coin" value={{ i }}>
+              {{ i }}
+              </button> 
+            </div>
+            {% endfor %}
           </div>
-          <div class="col-sm-3"> 
-            <p>Some text..</p>
-            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          </div>
-          <div class="col-sm-3">
-            <p>Some text..</p>
-            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          </div>
-        </div>
-      </div><br>
-      
-      <div class="container-fluid bg-3 text-center text-white" style="background-color:#f5f5f5";>    
-        <div class="row">
-          <div class="col-sm-3">
-            <p>Some text..</p>
-            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          </div>
-          <div class="col-sm-3"> 
-            <p>Some text..</p>
-            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          </div>
-          <div class="col-sm-3"> 
-            <p>Some text..</p>
-            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          </div>
-          <div class="col-sm-3">
-            <p>Some text..</p>
-            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          </div>
-        </div>
+        </form>
     </div><br><br>
 {% endblock content %}
