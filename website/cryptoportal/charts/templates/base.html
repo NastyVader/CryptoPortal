@@ -22,23 +22,23 @@
     </style>
 
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav"  style='background-color:#FFF'>
+<body style="padding-top:72px;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top  pt-0 pb-0" id="mainNav"  style='background-color:#F68A1E;padding-left:5%;padding-right:5%;'>
+        <img src={% static "Logo/logo2.jpg" %} alt="HERE" height="72px">
         <div class="container-fluid " style='margin-left: 0px;margin-right: 0px;'>
-            <a class="h1 text-white rounded p-2" href="#page-top" style="background-color: #41b3a3;"> CryptoPortal </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <a class="h1 p-2" href="#page-top" style="color:#FFF;border-top: 10px solid #F68A1E;"> CryptoPortal </a>
         </div>
-        <div class="justify-content-end" id="navbarResponsive">
+        <div class="justify-content-end" id="navbarResponsive" style="padding-bottom:0px;">
             <form class="">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item "><a class="nav-link" href="#about" style="color:#0A7B79;">About</a></li>
-                    <li class="nav-item "><a class="nav-link" href="#services" style="color:#0A7B79;">Services</a></li>
-                    <li class="nav-item "><a class="nav-link" href="#contact" style="color:#0A7B79;">Contact</a></li>
+                    <li class="nav-item "><a class="nav-link" href="#about" style="color:#FFF;">About</a></li>
+                    <li class="nav-item "><a class="nav-link" href="#services" style="color:#FFF;">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" style="color:#FFF;">Contact</a></li>
                 </ul>
             </form>
         </div>
     </nav>
-    <div class="input-group" style = "padding:20%;padding-top:9%;padding-bottom:2%;background-color:#41b3a3">
+    <div class="input-group" style = "padding:33.3%;padding-top:1%;padding-bottom:0%;background-color:#F68A1E">
         <br><br>
         <input type="search" class="form-control " placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
         <button class="btn btn-outline-light ml-2" type="submit" style="border-radius:0px">Search</button> 
@@ -46,7 +46,7 @@
     {% block content %}{% endblock content %}
 
     <footer class="container-fluid text-center fixed-bottom pt-2 pb-1">
-        <p><a href="#"><button class="btn btn-outline-success ml-2" type="submit">Login</button></a> This is still under development</p>
+        <p><a href="#"><button class="btn btn-outline-warning ml-2" type="submit">Login</button></a> This is still under development</p>
     </footer>
 </body>
 </html>

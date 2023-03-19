@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    <div class="jumbotron pr-0 pl-0"  style = "background-color:#41b3a3;border-radius:0px;">
+    <div class="jumbotron pr-0 pl-0 mb-0"  style = "background-color:#F68A1E;border-radius:0px;padding-bottom:0px">
 
       <ul class="nav nav-tabs" id="myTab" role="tablist" style="background-color:#f5f5f5";>
         <li class="nav-item">
@@ -20,11 +20,15 @@
         <div class="tab-pane fade" id="chart2" role="tabpanel" aria-labelledby="chart2-tab">{{ scatter|safe }}</div>
         <div class="tab-pane fade" id="chart3" role="tabpanel" aria-labelledby="chart3-tab">{{ candle_range|safe }}</div>
       </div>
-
-      <div class="container-fluid bg-3 text-center">
-        </br></br></br>    
-        <h3 style="color:#0A7B79;">Checkout more</h3><br>
-        <div class="row">
+    </div>
+    <div class="jumbotron p-4 m-0"  style = "background-color:#F68A1E;border-radius:0px;">
+      <div class="container-fluid bg-3 text-center text-white">
+        <h3 style="color:#FFF;">Checkout more</h3>
+      </div>
+     </div>
+    <div class="jumbotron pr-0 pl-0 pt-0"  style = "background-color:#f5f5f5;border-radius:0px;">
+      <div class="container-fluid bg-3 text-center text-white">
+        <div class="row" style="background-color:#f5f5f5";>
           <div class="col-sm-3">
             <p>Some text..</p>
             <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
@@ -44,7 +48,7 @@
         </div>
       </div><br>
       
-      <div class="container-fluid bg-3 text-center">    
+      <div class="container-fluid bg-3 text-center text-white" style="background-color:#f5f5f5";>    
         <div class="row">
           <div class="col-sm-3">
             <p>Some text..</p>

@@ -75,9 +75,9 @@ def intro(req):
     fig3.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01))
     fig4.update_layout(legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01))
     context = {
-        "basic": fig.to_html(full_html=False),
-        "scatter": fig2.to_html(full_html=False),
-        "candle_range": fig3.to_html(full_html=False),
-        "candle": fig4.to_html(full_html=False),
+        "basic": fig.to_html(full_html=False,default_width='100%', default_height='100%'),
+        "scatter": fig2.to_html(full_html=False,default_width='100%', default_height='100%'),
+        "candle_range": fig3.to_html(full_html=False,default_width='100%', default_height='100%'),
+        "candle": fig4.to_html(full_html=False,default_width='100%', default_height=700),
     }
     return render(req, "intro.html", context=context)
