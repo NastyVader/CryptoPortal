@@ -196,7 +196,7 @@ def get_preds_list(df, chart):
     else:
         loaded_model = ARIMA(
             dr,
-            order=(100, 1, 5),
+            order=(10, 1, 5),
             enforce_stationarity=True,
             enforce_invertibility=False,
         )
